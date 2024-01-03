@@ -11,13 +11,13 @@ while (age !== null) {
 
     if (age >= 1 && age <= 10) {
       status = "Child";
-   } else if (age >= 11 && age <= 18) {
-     status = "Teenager";
+    } else if (age >= 11 && age <= 18) {
+      status = "Teenager";
     } else if (age >= 19 && age <= 50) {
       status = "Grown up";
     } else {
       status = "Old";
-   }
+    }
 
     alert(`Your age status is: ${status}`);
   } else {
@@ -32,11 +32,16 @@ while (age !== null) {
 var text = prompt("Please enter a string:");
 
 if (text !== null) {
-
   let count = 0;
   for (let i = 0; i < text.length; i++) {
     const char = text.charAt(i);
-    if (char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u') {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
       count++;
     }
   }
@@ -50,17 +55,16 @@ if (text !== null) {
 
 function convert(hour) {
   if (hour === 0) {
-    return '12AM';
+    return "12AM";
   } else if (hour === 12) {
-    return '12PM';
+    return "12PM";
   } else if (hour < 12) {
-    return hour + 'AM';
+    return hour + "AM";
   } else {
-    return (hour - 12) + 'PM';
+    return hour - 12 + "PM";
   }
 }
 
-console.log(convert(0)); 
-console.log(convert(11)); 
-console.log(convert(13)); 
-
+console.log(convert(0));
+console.log(convert(11));
+console.log(convert(13));
