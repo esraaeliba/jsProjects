@@ -22,7 +22,7 @@ var firstNumber;
 var operation;
 var secondNumber;
 
-while (secondNumber !== null) {
+while (true) {
   if (result == 0) {
     firstNumber = parseFloat(prompt("Enter first number"));
     operation = prompt("Enter an operation(+,-,/,*,%)");
