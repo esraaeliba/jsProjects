@@ -33,6 +33,10 @@ while (true) {
     secondNumber = parseFloat(prompt("Enter Second number"));
   }
 
+  if (firstNumber === null || operation === null || secondNumber === null) {
+    break;
+  }
+
   switch (operation) {
     case "+":
       result = firstNumber + secondNumber;
@@ -81,7 +85,6 @@ function calculateSumAndAverage() {
   window.alert(`Sum is:${sum} , Average is:${average}`);
 }
 calculateSumAndAverage();
-
 
 //second question:
 
