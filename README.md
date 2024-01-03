@@ -21,4 +21,4 @@ In this repository, you'll find various JavaScript programs and exercises coveri
 
 To explore the code in this repository, you can simply clone the repository to your local machine using the following command:
 
-git clone https://github.com/your-username/javascript-course-tasks.git
+git clone https://github.com/esraaeliba/jsProjects.git
