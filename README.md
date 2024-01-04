@@ -16,6 +16,7 @@ In this repository, you'll find various JavaScript programs and exercises coveri
 - `/lab1`: Contains lab1 implementation
 - `/lab2`: Contains lab2 implementation
 - `/lab3`: Contains lab3 implementation
+- `/lab4`: Contains lab4 implementation
 
 ## Getting Started
 
