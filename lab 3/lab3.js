@@ -139,6 +139,98 @@ function phoneBookApp() {
 }
 phoneBookApp();
 
+//BONUS:
+while(true){
+function calculateArea() {
+  const shape = prompt("Enter the name of the shape (circle, triangle, square, rectangle, parallelogram, trapezium, ellipse):").toLowerCase();
+
+  switch (shape) {
+    case "circle":
+      const radius = parseFloat(prompt("Enter the radius of the circle:"));
+      if (!isNaN(radius)) {
+        const circleArea = Math.PI * radius ** 2;
+        alert(`The area of the circle is: ${circleArea}`);
+      } else {
+        alert("Please enter a valid number for the radius.");
+      }
+      break;
+
+    case "triangle":
+      const base = parseFloat(prompt("Enter the base length of the triangle:"));
+      const height = parseFloat(prompt("Enter the height of the triangle:"));
+      if (!isNaN(base) && !isNaN(height)) {
+        const triangleArea = 0.5 * base * height;
+        alert(`The area of the triangle is: ${triangleArea}`);
+      } else {
+        alert("Please enter valid numbers for base and height.");
+      }
+      break;
+
+    case "square":
+      const sideLength = parseFloat(prompt("Enter the length of a side of the square:"));
+      if (!isNaN(sideLength)) {
+        const squareArea = sideLength ** 2;
+        alert(`The area of the square is: ${squareArea}`);
+      } else {
+        alert("Please enter a valid number for the side length.");
+      }
+      break;
+
+    case "rectangle":
+      const length = parseFloat(prompt("Enter the length of the rectangle:"));
+      const width = parseFloat(prompt("Enter the width of the rectangle:"));
+      if (!isNaN(length) && !isNaN(width)) {
+        const rectangleArea = length * width;
+        alert(`The area of the rectangle is: ${rectangleArea}`);
+      } else {
+        alert("Please enter valid numbers for length and width.");
+      }
+      break;
+
+    case "parallelogram":
+      const basePara = parseFloat(prompt("Enter the base length of the parallelogram:"));
+      const heightPara = parseFloat(prompt("Enter the height of the parallelogram:"));
+      if (!isNaN(basePara) && !isNaN(heightPara)) {
+        const parallelogramArea = basePara * heightPara;
+        alert(`The area of the parallelogram is: ${parallelogramArea}`);
+      } else {
+        alert("Please enter valid numbers for base and height.");
+      }
+      break;
+
+    case "trapezium":
+      const sideA = parseFloat(prompt("Enter the length of side A of the trapezium:"));
+      const sideB = parseFloat(prompt("Enter the length of side B of the trapezium:"));
+      const heightTrap = parseFloat(prompt("Enter the height of the trapezium:"));
+      if (!isNaN(sideA) && !isNaN(sideB) && !isNaN(heightTrap)) {
+        const trapeziumArea = 0.5 * (sideA + sideB) * heightTrap;
+        alert(`The area of the trapezium is: ${trapeziumArea}`);
+      } else {
+        alert("Please enter valid numbers for side lengths and height.");
+      }
+      break;
+
+    case "ellipse":
+      const MajorAxis = parseFloat(prompt("Enter the major axis length of the ellipse (half of the major axis):"));
+      const MinorAxis = parseFloat(prompt("Enter the minor axis length of the ellipse (half of the minor axis):"));
+      if (!isNaN(MajorAxis ) && !isNaN(MinorAxis )) {
+        const ellipseArea = Math.PI * MajorAxis * MinorAxis ;
+        alert(`The area of the ellipse is: ${ellipseArea}`);
+      } else {
+        alert("Please enter valid numbers for semi-major and semi-minor axes.");
+      }
+      break;
+
+    default:
+      alert("Invalid shape entered. Please try again.");
+  }
+}
+
+// Call the function to start the area calculation process
+calculateArea();
+}
+
+
 //pdf3
 //ex1
  var person = 
