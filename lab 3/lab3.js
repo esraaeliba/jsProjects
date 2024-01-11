@@ -226,7 +226,6 @@ function calculateArea() {
   }
 }
 
-// Call the function to start the area calculation process
 calculateArea();
 }
 
