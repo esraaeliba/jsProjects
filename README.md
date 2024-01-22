@@ -13,12 +13,14 @@ In this repository, you'll find various JavaScript programs and exercises coveri
 
 ## Folder Structure
 
+- `/hackerRank`: Contains the implementation of hacker rank problem
 - `/lab1`: Contains lab1 implementation
 - `/lab2`: Contains lab2 implementation
 - `/lab3`: Contains lab3 implementation
 - `/lab4`: Contains lab4 implementation
 - `/lab5`: Contains lab5 implementation
 - `/lab6`: Contains lab6 implementation
+- `/lab7`: Contains lab7 implementation
 
 ## Getting Started
 
