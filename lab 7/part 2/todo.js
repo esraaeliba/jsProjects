@@ -8,7 +8,7 @@ function addTask() {
   }
 
   const taskItem = document.createElement('li');
-  taskItem.className = 'task';  // Use class instead of id
+  taskItem.className = 'task';  
   taskItem.innerHTML = `
   <span class="inp" onclick="toggleDone(this)">${taskInput.value}</span>
     <div class="innerHTml">
@@ -26,7 +26,7 @@ function toggleDone(element) {
 }
 
 function toggleDoneStatus(element) {
-  const taskItem = element.parentNode.parentNode; // Adjusted to go up two levels in the DOM hierarchy
+  const taskItem = element.parentNode.parentNode; 
   const taskText = taskItem.querySelector('.inp');
   taskText.classList.toggle('done');
   taskItem.style.backgroundColor = '#dff0d8';
